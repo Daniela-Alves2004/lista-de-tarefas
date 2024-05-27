@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <input class="tarefa" type="text" id="tarefa" placeholder="Informe a tarefa:">
+            <input  class="dataTarefa" type="date" id="dataTarefa">
+            <select id="opcao">
+                <option value="URGENTE">Urgente</option>
+                <option value="IMPORTANTE">Importante</option>
+                <option value="ROTINA">Rotina</option>
+                <option value="OUTRO">Outro</option>
+            </select>
+            <span onclick="addElemento()" class="addBtn">INCLUIR</span>
+            <span onclick="cleanList()" class="cleanBtn">LIMPAR</span>
+        </div>
+    
+        <div id="lista">
+            <ul id="itemLista">
+                <li id="checked" class="checked"> Ex: Tomar café</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <script src="script.js" defer> </script>
+</body>
+</html>

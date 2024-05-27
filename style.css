@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    color: #EEE9E8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    height: 800px;
+    margin-top: 200px;
+    background-color: #575941;
+    border-radius: 40px;
+    padding: 30px;
+    overflow: auto;
+    
+}
+.wrapper::-webkit-scrollbar {
+    width: 1px; 
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:10px;
+    text-align: center;
+    background-color: #575941;
+    z-index: 1;
+   
+}
+.header .tarefa {
+    padding: 15px 25px;
+    background-color: #C5B2B1;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #575941;
+}
+
+.header .dataTarefa {
+    padding: 15px 5px;
+    background-color: #C5B2B1;
+    font-size: 15px;
+    border-radius: 30px;
+    color: #575941;
+    
+}
+.header select{
+    padding: 15px 10pxx;
+    background-color: #C5B2B1;
+    font-size: 15px;
+    border-radius: 30px;
+    color: #575941;
+}
+.header span {
+    padding: 15px 20px;
+    background-color: #8a9a75;
+    border-radius: 30px;
+    cursor:pointer ;
+}
+.addBtn:hover {
+    background-color: #C3B3AE;
+}
+
+.header .cleanBtn {
+    background-color: transparent;
+    border: 1px solid #8a9a75;
+
+}
+.cleanBtn:hover{
+    background-color: #8a9a75;
+}
+
+ul{
+    list-style-type: none;
+    padding-top: 70px;
+    
+    
+    
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 8px 12px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    margin: 15px;
+}
+
+
+
+ul li:hover {
+    background: #8A9A75;
+}
+
+ul li.checked {
+    background: #888;
+    text-decoration: line-through;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px 30px 12px 40px;
+    border-radius: 30px;
+}
+.close:hover {
+    background-color:#C3B3AE;
+}
